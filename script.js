@@ -1,10 +1,10 @@
-// === Wheel Spin Logic ===
+// Wheel Spin
 let currentRotation = 0;
-
 function spin() {
   const wheel = document.getElementById("wheel");
-  const resultDisplay = document.getElementById("result");
+  if (!wheel) return; // prevents running on mood.html
 
+  const resultDisplay = document.getElementById("result");
   const randomSpin = 1800 + Math.floor(Math.random() * 1800);
   currentRotation += randomSpin;
   wheel.style.transform = `rotate(${currentRotation}deg)`;
