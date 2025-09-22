@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mood</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>My Mood & Gratitude Journal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="interact.html">Interact</a>
+      <a href="mood.html">My Mood</a>
+    </nav>
+  </header>
+
+  <section class="mood">
+    <h2>How are you feeling today?</h2>
+    <select id="moodSelect">
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😔 Sad</option>
+      <option value="stressed">😣 Stressed</option>
+      <option value="calm">😌 Calm</option>
+      <option value="excited">🤩 Excited</option>
+    </select>
+    <button onclick="showQuote()">Get Quote</button>
+    <p id="quoteDisplay"></p>
+  </section>
+
+  <section class="gratitude">
+    <h2>Gratitude Journal</h2>
+    <p>Write 3 small things you are grateful for today 🌸</p>
+    <form>
+      <label for="grat1">1.</label>
+      <input type="text" id="grat1" name="grat1"><br><br>
+
+      <label for="grat2">2.</label>
+      <input type="text" id="grat2" name="grat2"><br><br>
+
+        <label for="grat3">3.</label>
+        <input type="text" id="grat3" name="grat4"><br></br>
+        <input type="submit" value="save">
+        </form>
+        </section>
+        
+        <script>
+            const quotes = {
+                happy: "Happiness is not by chance, but by choice. - Jim Rohn",
+                sad: "This too shall pass. - Persian adage",
+                stressed: "You are stronger than you think. - Unknown",
+                calm: "Peace comes from within. Do not seek it without. - Buddha",
+                excited: "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt"
+            };
+
+            function showQuote() {
+                const mood = document.getElementById("moodSelect").value;
+                const quote = quotes[mood];
+                document.getElementById("quoteDisplay").innerText = quote;
+            }
+        </script>
+
+ <section class="wheel-section">
+    <h2>🎡 Spin the Motivation Wheel!</h2>
+    <div class="pointer"></div>
+    <div class="wheel" id="wheel">
+      <div class="label" style="--i:0;">💧 Drink Water</div>
+      <div class="label" style="--i:1;">🌬️ Deep Breaths</div>
+      <div class="label" style="--i:2;">✨ Be Proud</div>
+      <div class="label" style="--i:3;">😁 Smile</div>
+      <div class="label" style="--i:4;">🧘 Stretch</div>
+      <div class="label" style="--i:5;">💌 Send Kindness</div>
+    </div>
+    <button onclick="spin()">SPIN</button>
+    <p id="result"></p>
+  </section>
+
+  <script src="script.js"></script>
+</script>
+<footer class="footer">
+            <p>@ 2025 thrivespace / Together we heal 💙</p>
+        </footer>
+
+</body>
+</html>

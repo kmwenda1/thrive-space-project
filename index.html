@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="header">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrive space</title>
+    <title>Thrive Space</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header class="header">
-        <h1>Welcome to Thrive Space</h1>
-        <navigation>
-    <a href="about.html">About Us</a>
-    <a href="interact.html">Interact</a>
-    <a href="mood.html">My Mood</a>
-        </navigation>
-        
-        
+        <h1>Welcome to Thrive Space 🌱</h1>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="interact.html">Interact</a>
+            <a href="mood.html">My Mood</a>
+            <a href="motivation.html">Motivation Wheel</a>
+                        </nav>
     </header>
 
-    <section id="about">
-        <section class ="about">
+
+
+
+
+    <section class="about" id="about">
         <h2>About Us</h2>
-      <p>ThriveSpace is an online sanctuary designed to support 
-        mental wellness, self-care, and
-         personal growth. Whether you’re navigating stress, anxiety, 
-         or just need a moment of calm, ThriveSpace offers tools, resources, 
-        and a compassionate community to help you feel grounded.</p>
+        <p>
+            ThriveSpace is an online sanctuary designed to support 
+            mental wellness, self-care, and personal growth. Whether 
+            you’re navigating stress, anxiety, or just need a moment 
+            of calm, ThriveSpace offers tools, resources, 
+            and a compassionate community to help you feel grounded.
+        </p>
+        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">
+            Learn More
+        </button>
     </section>
 
-    <button onclick="document.getElementById('about').scrollIntoView();">Learn More</button>
-
-    <section id="services">
-        <section class="services">
+    <section class="services" id="services">
         <h2>Our Services</h2>
         <ul>
             <li>Guided breathing and mindfulness exercises</li>
-
-            <li>Journaling prompts and a mood tracker</li> 
-
-             <li>Articles and self-help resources from trusted voices</li>
-
-               <li>A safe, non-judgmental space to share stories and connect</li>
-
-              <li>Quick access to professional support and hotlines when needed</li>
+            <li>Journaling prompts and a mood tracker</li>
+            <li>Articles and self-help resources from trusted voices</li>
+            <li>A safe, non-judgmental space to share stories and connect</li>
+            <li>Quick access to professional support and hotlines when needed</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
+        <form>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -64,10 +62,8 @@
         </form>
     </section>
 
-    <footer>
-       
+    <footer class="footer">
+        <p>© 2025 ThriveSpace | You are not alone 💙</p>
     </footer>
 </body>
-
-
-    </html>
+</html>

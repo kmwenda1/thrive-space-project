@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Interact with Thrive Space</title>
-        <link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interact - Thrive Space</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Interact With Us 💬</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="mood.html">My Mood</a>
+    </nav>
+  </header>
 
-    </head>
-    <body>
-        <form>
-            <form>
-  <label>Name (optional):</label><br>
-  <input type="text" placeholder="Your name"><br><br>
+  <section class="interact">
+    <h2>Share Your Thoughts</h2>
+    <p>
+      This is a safe place to express yourself. Write what’s on your mind,
+      share positivity, or simply check in. 💙
+    </p>
 
-  <label>Your Message:</label><br>
-  <textarea placeholder="Share your thoughts..."></textarea><br><br>
+    <form class="interact-form">
+      <textarea placeholder="Write your thoughts here..." required></textarea>
+      <button type="submit">Post</button>
+    </form>
 
-  <button type="submit">Send</button>
-</form>
-<!-- anonymus feedback form -->
- <form action="#" method="post">
-            <label for="feedback">sharing box:</label><br>
-            <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+    <div class="messages">
+      <h3>Community Wall</h3>
+      <p><strong>Alex:</strong> Feeling calmer after trying the breathing exercise 🌬️</p>
+      <p><strong>Sam:</strong> Today I’m grateful for my little sister 💕</p>
+    </div>
+  </section>
 
-            <input type="submit" value="Submit Feedback">
-        </body>
-        </form>
+  <footer class="footer">
+    <p>© 2025 ThriveSpace | You are valued 🌟</p>
+  </footer>
+</body>
 </html>
